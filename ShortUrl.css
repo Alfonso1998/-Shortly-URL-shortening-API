@@ -59,6 +59,9 @@ ul.lista li a{
 ul.login{
     margin-top: 20px;
 }
+ul.login li{
+     list-style: none;
+}
 
 ul.login a{
     text-decoration: none;
