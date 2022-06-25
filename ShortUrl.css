@@ -1,0 +1,684 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    height:100vh;
+    font-family: 'Poppins', sans-serif;
+    overflow-x:hidden;
+   
+   
+}
+html{
+    overflow-x:hidden;
+}
+div.head{
+    display: none;
+}
+div.hamburger{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+div.hamburger span{
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+ul.lista{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+ul.lista li{
+    margin-left: 30px;
+    list-style: none;
+}
+ul.lista li a{
+    text-decoration: none;
+    font-size: 14px;
+    color:hsl(257, 27%, 26%);
+}
+
+ul.login{
+    margin-top: 20px;
+}
+
+ul.login a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px; 
+    padding: 10px 20px;
+    color:hsl(257, 27%, 26%);
+    transition: all ease-in-out 0.3s;
+
+}
+ul.login a:hover{
+    color:  white;
+    background-color:  hsl(180, 66%, 49%);
+    border-radius: 20px;
+}
+
+div.container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+ 
+}
+div.start{
+    position: relative;
+    right: -20px;
+    width: 40%;
+    
+}
+h1.title{
+    font-size: 70px;
+    line-height: 80px;
+    color:hsl(257, 27%, 26%);
+}
+div.par p{
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom : 30px ;
+    max-width: 95%;
+    letter-spacing: 1px;
+    color:hsl(257, 7%, 63%);
+}
+
+button.get{
+    padding: 10px 40px;
+    border-radius: 25px;
+    border: none;
+    background-color:hsl(180, 66%, 49%);
+    font-size: 18px;
+    color: white;
+    box-shadow: 5px 5px 15px grey;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+button.get:hover{
+    transform: scale(0.9);
+    
+}
+
+
+div.input{
+    width:80%;
+    margin: 50px auto;
+    height: 130px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg-shorten-desktop.svg);
+    background-color:hsl(257, 27%, 26%); 
+    padding: 0 80px;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: 0px 10px 20px rgb(182, 175, 175);
+    position: relative;
+    bottom: 110px;
+   
+}
+div.input input{
+    width: 100%;
+    margin: 0 20px;
+    height: 40%;
+    border-radius: 10px;
+    outline: none;
+    padding: 0 30px;
+    border: none;
+   
+}
+button.input{
+
+        padding: 16px 0px;
+        border-radius: 10px;
+        border: none;
+        background-color: hsl(180, 66%, 49%);
+        font-size: 14px;
+        color: white;
+        width: 190px;
+        transition: all ease-in-out 0.3s;
+        cursor: pointer;
+    }
+
+
+section{
+    width: 100%;
+    background-color: #eff1f7;
+    padding-bottom: 250px ;
+   z-index: -1;
+   display: flex;
+   flex-direction: column;
+   
+}
+div.advance{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+div.advance h3{
+    font-size: 40px;
+    color:hsl(257, 27%, 26%);
+}
+div.advance p{
+    max-width: 550px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 30px;
+    color:hsl(257, 7%, 63%);
+}
+
+div.contenitore{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+div.primo,
+div.secondo,
+div.terzo{
+width: 100%;
+height: auto;
+background: white;
+padding: 0 30px 30px 30px;
+margin: 0 30px;
+border-radius: 10px;
+z-index: 1;
+box-shadow: 0px 10px 20px lightgray;
+}
+
+div.primo div,
+div.secondo div,
+div.terzo div{
+    position: relative;
+    bottom: 32px;
+    width: 65px;
+    height: 65px;
+    background-color: hsl(257, 27%, 26%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 20px;
+   
+}
+
+section::before{
+    content: "";
+    width: 40%;
+    position: relative;
+    background-color: hsl(180, 66%, 49%);
+    height: 15px;
+    border: none;
+    top: 410px;
+    left: 30%;
+    z-index: 0;
+}
+div.secondo{
+    position: relative;
+    bottom: -50px;
+}
+div.terzo{
+    position: relative;
+    bottom: -100px;
+}
+
+
+div.primo  h4,
+div.secondo  h4,
+div.terzo  h4{
+font-size: 20px;
+color: hsl(257, 27%, 26%);
+margin-bottom: 15px;
+}
+
+
+div.primo  p,
+div.secondo  p,
+div.terzo  p{
+font-size: 12px;
+color:hsl(257, 7%, 63%);
+}
+
+
+div.pre{
+        background-image: url(images/bg-boost-desktop.svg);
+        background-repeat: no-repeat;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(257, 27%, 26%);
+        background-size: cover;
+}
+div.pre h1{
+    font-size: 26px;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+div.pre button {
+    padding: 10px 40px;
+    border-radius: 25px;
+    border: none;
+    background-color:hsl(180, 66%, 49%);
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-top: 14px;
+    transition: all ease-in-out 0.3s;
+}
+
+div.pre button:hover{
+    transform: scale(0.9);
+    transition: all ease-in-out 0.3s;
+    
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    padding: 38px;
+    background-color: hsl(260, 8%, 14%);
+}
+
+
+div.footer-logo h1{
+    color: white;
+}
+
+div.footer-lista{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+
+div.lista1,
+div.lista2,
+div.lista3{
+    width: 20%;
+}
+
+div.footer-lista h4{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+div.footer-lista li{
+    list-style: none;
+}
+
+div.lista1 a,
+div.lista2 a,
+div.lista3 a{
+    text-decoration: none;
+    font-size:12px;
+    color:hsl(257, 7%, 63%) ;
+    transition: all ease-in-out 0.3s;
+    padding-bottom: 5px;
+}
+
+div.web img{
+     width: 15px;
+    margin: 0 5px;
+    text-decoration: none;
+   
+}
+
+div.lista1  a:hover,
+div.lista2  a:hover,
+div.lista3  a:hover{
+    border-bottom: 1px solid hsl(257, 7%, 63%) ;
+    padding-bottom: 3px;
+}
+
+div.start img{
+    width: 700px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #eff1f7;
+    margin-top: 200px;
+}
+
+div.createUl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 140px;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+div.link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+div.link button{
+    padding: 16px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(180, 66%, 49%);
+    font-size: 14px;
+    color: white;
+    width: 150px;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+div.short{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.link a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+    padding: 10px 20px;
+    color: hsl(257, 27%, 26%);
+    transition: all ease-in-out 0.3s;
+}
+
+
+
+/*MEDIA QUERY START HERE*/
+
+@media screen and (max-width:1248px){
+    div.start img{
+        width: 600px;
+    }
+}
+@media screen and (max-width:1084px){
+    div.start img{
+        width: 500px;
+    }
+    h1.title {
+        font-size: 56px;
+        line-height: 60px;
+        color: hsl(257, 27%, 26%);
+    }
+    div.par p {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 30px;
+        max-width: 95%;
+        letter-spacing: 1px;
+        color: hsl(257, 7%, 63%);
+}
+}
+
+@media screen and (max-width:980px){
+    div.head{
+        display:flex;
+        width: 90%;
+        margin: 20px auto;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+    header.close{
+       transform: translateX(-1000px);
+       position: absolute;
+       transition: all ease-in-out 0.3s;
+       width: 90%;
+       margin: 0 auto;
+       left: 10%;
+       z-index: 6000;
+       display: flex;
+       flex-direction: column;
+    }
+header.active{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 20px;
+    transform: translateX(0px);
+    
+}
+header img{
+    display:none;
+    
+}
+header ul{
+    display: flex;
+    flex-direction: column;
+}
+ul.lista li{
+    margin: 0;
+    padding: 10px;
+}
+ul.lista li a{
+    color:  white;
+    margin-bottom: 10px;
+}
+ul.login a:hover{
+    padding: 10px 100px;
+}
+ul.lista li.last{
+    border-bottom: 1px solid lightgrey;
+    padding: 0px 100px 10px;  
+}
+ul.login{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 6px;
+}
+
+ul.login a{
+    margin: 0;
+   color: white;
+   margin-bottom: 10px;
+}
+    div.container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    div.start {
+        position: relative;
+        left: 100px;
+        width: 500px;
+    }
+    div.par{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.par h1{
+        text-align: center;
+        font-size: 50px;
+        margin: 50px 0;
+}
+    
+    div.par p{
+        text-align: center;
+    }
+    div.advance{
+        position: relative;
+        bottom: 400px;
+    }
+    div.input{
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        height: 176px;
+        bottom: 130px;
+
+    }
+    div.input input{
+        width: 100%;
+        height: 46%;
+    }
+    div.input button{
+        width: 100%;
+        padding: 18px 0;
+        font-size: 20px;
+    }
+    
+    div.primo div, 
+    div.secondo div,
+     div.terzo div{
+        margin: 0 auto;
+    }
+    div.primo,
+     div.secondo, 
+    div.terzo{
+       margin-top: 30px; 
+    }
+   div.advance h3{
+    text-align: center;
+   }
+   section{
+    padding: 0;
+   }
+   section::before{
+    display: none;
+   }
+div.contenitore{
+    flex-direction: column;
+    position: relative;
+    bottom: 400px;
+    width: 90%;
+}
+
+div.blue{
+    height: 550px;
+    position: relative;
+    top:540px;
+    width: 15px;
+    background-color: aqua;
+    margin: 0 auto;
+}
+
+footer{
+    flex-direction: column;
+    align-items: center;
+}
+div.footer-lista {
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+div.lista1, div.lista2, div.lista3 {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+div.footer-logo h1{
+    margin-bottom: 30px;
+}
+div.footer-lista ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+div.footer-lista h4{
+    text-align: center;
+}
+div.link{
+   flex-direction: column;
+}
+div.link p{
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+div.short{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width:100%;
+    margin-top: 10px;
+}
+div.short a{
+    padding: 10px 0;
+    margin: 0;
+}
+div.short button{
+    width:100%;
+}
+}
+
+@media screen and (max-width:413px){
+    div.par h1{
+        font-size: 33px;
+        line-height: 38px;
+        margin: 30px 0;
+    }
+    div.blue {
+        height: 700px;
+        position: relative;
+        top: 700px;
+        width: 15px;
+        background-color: aqua;
+        margin: 0 auto;
+    }
+    div.par p{
+        font-size: 12px;
+    }
+    ul.login a:hover{
+        padding: 10px 60px;
+    }
+    ul.lista li.last{
+        border-bottom: 1px solid lightgrey;
+        padding: 0px 60px 10px;  
+    }
+
+}
+
+@media screen and (max-width:340px){
+    div.pre h1{
+        font-size: 20px;
+    }
+}
