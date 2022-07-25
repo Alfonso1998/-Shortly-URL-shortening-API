@@ -45,10 +45,6 @@ function CreateUl() {
                 navigator.clipboard.writeText(Sito);
 
             })
-            let arr = [];
-            localStorage.setItem("Key", "DivLink");
-            localStorage.getItem("Key");
-            arr.push();
         })
 
         .catch(e => {
